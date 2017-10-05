@@ -181,6 +181,7 @@ class Label extends Component {
   }
   constructor(props) {
     super(props);
+    this.cancelHandler = this.cancelHandler.bind(this);
   }
   cancelHandler(){
     const {onCancel} = this.props;
