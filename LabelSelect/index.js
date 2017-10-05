@@ -196,7 +196,7 @@ class Label extends Component {
           style={Styles.closeContainer}
           underlayColor="transparent"
           activeOpacity={0.5}
-          onPress={cancelHandler}>
+          onPress={this.cancelHandler}>
           <View>
             <Image
               style={Styles.closeIcon}
