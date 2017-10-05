@@ -182,6 +182,10 @@ class Label extends Component {
   constructor(props) {
     super(props);
   }
+  cancelHandler(){
+    const {onCancel} = this.props;
+    onCancel(this.props.data);
+  }
   render() {
     const {enable, readOnly, onCancel, customStyle} = this.props;
     return (
@@ -192,7 +196,7 @@ class Label extends Component {
           style={Styles.closeContainer}
           underlayColor="transparent"
           activeOpacity={0.5}
-          onPress={onCancel}>
+          onPress={cancelHandler}>
           <View>
             <Image
               style={Styles.closeIcon}
