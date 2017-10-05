@@ -187,7 +187,7 @@ class Label extends Component {
     onCancel(this.props.data);
   }
   render() {
-    const {enable, readOnly, onCancel, customStyle} = this.props;
+    const {enable, readOnly, customStyle} = this.props;
     return (
       <View style={[Styles.selectedItem, !enable && Styles.disableColor]}>
         <Text style={[Styles.labelText, !enable && Styles.disableText, customStyle.text || {}]}
