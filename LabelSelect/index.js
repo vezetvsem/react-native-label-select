@@ -187,7 +187,7 @@ class Label extends Component {
     return (
       <View style={[Styles.selectedItem, !enable && Styles.disableColor]}>
         <Text style={[Styles.labelText, !enable && Styles.disableText, customStyle.text || {}]}
-          numberOfLines={1} ellipsisMode="tail">{this.props.children}</Text>
+          numberOfLines={3} ellipsisMode="tail">{this.props.children}</Text>
         {enable && !readOnly && <TouchableHighlight
           style={Styles.closeContainer}
           underlayColor="transparent"
@@ -235,7 +235,7 @@ class ModalItem extends Component {
         <View style={Styles.modalItem}>
           <Text
             style={[Styles.modalText, customStyle.modalText || {}]}
-            numberOfLines={1}
+            numberOfLines={3}
             ellipsisMode="tail">
             {this.props.children}
           </Text>

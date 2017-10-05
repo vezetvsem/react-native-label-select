@@ -102,13 +102,13 @@ export default StyleSheet.create({
     backgroundColor: Color.main
   },
   modalItem: {
-    height: 50,
+    height: 80,
     paddingHorizontal: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBottomWidth: 2 / scale,
-    borderBottomColor: '#bbb'
+    borderBottomColor: 'black'
   },
   modalText: {
     fontSize: 16,
