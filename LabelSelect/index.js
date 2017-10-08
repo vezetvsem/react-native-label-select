@@ -190,7 +190,7 @@ class Label extends Component {
   render() {
     const {enable, readOnly, customStyle} = this.props;
     return (
-      <View style={[Styles.selectedItem, !enable && Styles.disableColor]}>
+      <View style={[this.props.labelStyle, Styles.selectedItem, !enable && Styles.disableColor]}>
         <Text style={[Styles.labelText, !enable && Styles.disableText, customStyle.text || {}]}
           numberOfLines={3} ellipsisMode="tail">{this.props.children}</Text>
         {enable && !readOnly && <TouchableHighlight
