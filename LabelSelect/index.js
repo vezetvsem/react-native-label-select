@@ -194,7 +194,7 @@ class Label extends Component {
         <Text style={[Styles.labelText, !enable && Styles.disableText, customStyle.text || {}]}
           numberOfLines={3} ellipsisMode="tail">{this.props.children}</Text>
         {enable && !readOnly && <TouchableHighlight
-          style={Styles.closeContainer}
+          style={this.props.closeStyle? this.props.closeStyle : Styles.closeContainer}
           underlayColor="transparent"
           activeOpacity={0.5}
           onPress={this.cancelHandler}>
