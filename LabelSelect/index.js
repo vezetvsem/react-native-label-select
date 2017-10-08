@@ -198,7 +198,7 @@ class Label extends Component {
           underlayColor="transparent"
           activeOpacity={0.5}
           onPress={this.cancelHandler}>
-          <View>
+          <View style={this.props.labelStyle}>
             <Image
               style={Styles.closeIcon}
               source={this.closeIcon}
