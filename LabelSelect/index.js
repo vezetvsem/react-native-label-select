@@ -237,7 +237,7 @@ class ModalItem extends Component {
         activeOpacity={0.5}
         underlayColor="transparent"
         onPress={this._toggleSelect}>
-        <View style={Styles.modalItem}>
+        <View style={[Styles.modalItem, customStyle.modalItem || {}]}>
           <Text
             style={[Styles.modalText, customStyle.modalText || {}]}
             numberOfLines={3}
